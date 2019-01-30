@@ -1,11 +1,13 @@
 require_relative 'spec_helper'
 
 describe Generator do
+
   context 'to test the randomGenerator method' do
     before(:all) do
     @postcodes = Generator.new.postcodes
     @postcodes_array = @postcodes.random_array(3)
     end
+
     it 'should be an array type' do
       expect(@postcodes_array).to be_kind_of(Array)
     end
@@ -22,9 +24,6 @@ describe Generator do
         expect(@postcode.length).to be_between(5,9)
       end
     end
-    it 'should only contain alphabetic letters in the postcode' do
-      @postcodes_array.each do |postcode|
-      expect().to
-    end
+    
   end
 end
