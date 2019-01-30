@@ -20,6 +20,7 @@ describe Generator do
       end
     end
     it 'should be between 6-8 characters long' do 
+      p @postcodes_array
       @postcodes_array.each do |postcode|
         expect(@postcode.length).to be_between(5,9)
       end

@@ -9,5 +9,3 @@ class Generator
 
 end
 
-test = Generator.new.postcodes
-p test.random_array(3)
