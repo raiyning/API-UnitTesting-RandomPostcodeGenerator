@@ -5,7 +5,7 @@ describe Generator do
   context 'to test the randomGenerator method' do
     before(:all) do
     @postcodes = Generator.new.postcodes
-    @postcodes_array = @postcodes.random_array(3)
+    @postcodes_array = @postcodes.random_array(rand(2..10))
     end
 
     it 'should be an array type' do
@@ -24,6 +24,6 @@ describe Generator do
         expect(@postcode.length).to be_between(5,9)
       end
     end
-    
+
   end
 end
